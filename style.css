@@ -56,7 +56,7 @@ header {
     flex-direction: column;
     width: 100%;
     background-image: url(images/mobile/image-header.jpg);
-    min-height: 430px;
+    min-height: 60vh;
     background-position:  center 80%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,6 +114,10 @@ header nav span {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
 }
+.menu-colapse li:hover {
+    color: var(--Very-dark-desaturated-blue);
+    transition: all ease-in 0.2s;
+}
 .menu-colapse .contact {
     padding: 0.8rem 1.8rem;
     font-family: "Fraunces", serif;
@@ -149,6 +153,7 @@ button {
 }
 .header-content h1 {
     text-align: center;
+    font-weight: 900;
     color: white;
     padding-top: 1.8rem;
     letter-spacing: 0.5rem;
@@ -160,7 +165,7 @@ svg {
    padding-top: 1.8rem;
 }
 .grid-layout {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .grid-egg {
@@ -622,6 +627,12 @@ footer .icons {
 
     }
     @media screen and (min-width: 900px) {
+        header {
+            height: 100vh;
+        }
+        .header-content h1 {
+            font-size: 5rem;
+        }
         .testimonials-content > div {
         display: flex;
         flex-direction: row;
@@ -633,13 +644,19 @@ footer .icons {
     }
     @media screen and (min-width: 1100px) {
         .grid-default {
-            padding: 8rem 2.5rem;
+            padding: 6rem 2.5rem;
+        }
+        .grid-graphic {
+            background-position: center 30%;
+        }
+        .grid-photography {
+            background-position: center 30%;
         }
         .grid-photography div {
-            padding: 0 2rem 3.8rem 2rem;
+            padding: 0 2rem 1.8rem 2rem;
         }
         .grid-graphic div {
-            padding: 0 2rem 3.8rem 2rem;
+            padding: 0 2rem 1.8rem 2rem;
         }
     }
 
