@@ -137,7 +137,6 @@ header nav span {
 button {
     background: none;
     border: none;
-
 }
 .header-content {
     display: flex;
@@ -210,6 +209,8 @@ svg {
     width: fit-content;
     margin: 0 auto;
     line-height: 0.7rem;
+    transition: all ease 0.3s;
+
 }
 .grid-default a:hover {
     border-bottom: 5px solid hsl(51, 95%, 58%);
@@ -404,7 +405,10 @@ footer .footer-menu {
     list-style: none;
     margin-top: 0.5rem;
     margin-bottom: 1.1rem;
-    
+}
+.footer-menu a li:hover {
+    color: #ffffff;
+    transition: all ease-in 0.2s;
 }
 footer .icons {
     width: 100%;
@@ -412,6 +416,14 @@ footer .icons {
     justify-content: center;
     align-items: center;
     gap: 1.4rem;
+}
+.footer-icon {
+    height: fit-content;
+    fill: #2C7566;
+    transition: all ease-in 0.2s;
+}
+.footer-icon:hover {
+    fill: #ffffff;
 }
 
 @media 
@@ -421,7 +433,7 @@ footer .icons {
             flex-direction: column;
             width: 100%;
             background-image: url(images/desktop/image-header.jpg);
-            min-height: 430px;
+            min-height: 70vh;
             background-position:  center 80%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -459,6 +471,10 @@ footer .icons {
             color: black;
             margin-top: 0;
             font-size: 0.9rem;
+            transition: all ease-in 0.2s;
+        }
+        .menu-colapse .contact:hover {
+            background-color: hsl(199.86deg 100% 71.57%);
         }
         
         .menu-colapse li {
