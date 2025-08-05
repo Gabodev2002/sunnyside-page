@@ -2,43 +2,39 @@
 
     /* ### Primary */
 
---Soft-red: hsl(7, 99%, 70%);
---Yellow: hsl(51, 100%, 49%);
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
 
---dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text)*/
-  --dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
-  --dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer) */
+    --dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text)*/
+    --dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+    --dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer) */
 
 
   /* ### Neutral */
 
-  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
-  --Dark-grayish-blue: hsl(232, 10%, 55%);
-  --Grayish-blue: hsl(210, 4%, 67%);
-  --White: hsl(0, 0%, 100%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
 
     /* font-size   */
 
     --Font-size: 1.125rem;
-/* 
-    - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
-- Weights: 600
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700, 900 */
+
 
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra */
+    width: 10px; 
   }
   
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Fondo de la pista */
+    background: #f1f1f1; 
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #888; /* Color del pulgar */
+    background: #888; 
   }
 * {
     box-sizing: border-box;
@@ -72,8 +68,9 @@ header nav {
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-    transition: all ease 0.3s;
+    
 }
+
 .scrolled {
     position: fixed;
     background-color: hsl(199.9deg 100% 62.16%);
@@ -142,7 +139,16 @@ button {
     border: none;
 
 }
-h1 {
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+.scrolled-content {
+    opacity: 0;
+}
+.header-content h1 {
     text-align: center;
     color: white;
     padding-top: 1.8rem;
@@ -552,6 +558,15 @@ footer .icons {
             font-size: 1.5rem;
         }
 
+    }
+
+    @keyframes header-title-animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
 
